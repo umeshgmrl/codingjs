@@ -4,7 +4,6 @@ var allTitles = _.uniq(exercises.map(e=>e.title))
 var titles = title? [title] : allTitles
 
 $(document).ready(() => {
-
   for (title of titles){
     var div = $('<div class="problems"></div>').appendTo('.exerciseIndex  ')
     div.append(`<h3 class="probTitle" id="${title}">${title}</h3>`)
